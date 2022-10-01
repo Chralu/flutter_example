@@ -1,4 +1,20 @@
 {
+    "appTitle": "ToudouxList",
     "networkErrorTitle": "Une erreur est survenue.",
-    "networkErrorMessage": "Merci de vérifier votre connexion à internet."
+
+    "emailAlreadyInUse": "Vous avez déjà un compte avec cette adresse email",
+    "networkErrorMessage": "Merci de vérifier votre connexion à internet.",
+    "wrongCredentialsMessage": "Email ou mot de passe invalide",
+    "missingPermissionMessage": "L'application a besoin de votre permission pour effectuer cette opération",
+    "contentNotFoundMessage": "Il n'y a rien à voir ici",
+    "invalidEmailMessage": "Cette adresse email n'est pas valide",
+    "requiredValueMessage": "Ce champ est obligatoire",
+
+    "signinTitle": "Nouveau compte",
+    "signinButton": "Valider",
+    "signinInProgress": "Authentification en cours",
+    "signinEmailFieldHint": "toto@tutu.com",
+    "signinEmailFieldLabel": "Adresse email",
+    "signinPasswordFieldHint": "***",
+    "signinPasswordFieldLabel": "Mot de passe"
 }

@@ -1,4 +1,8 @@
-import 'package:flutter/material.dart';
+part of '../theme.dart';
+
+extension ExtThemeColors on BuildContext {
+  ColorScheme get colorScheme => Theme.of(this).colorScheme;
+}
 
 class Palette {
   static const darkBlue = Color(0xff090942);
@@ -13,8 +17,4 @@ class Palette {
 
   static const lightPurple = Color(0xffe5e8fd);
   static const background = Colors.white;
-}
-
-extension ExtThemeColors on BuildContext {
-  ColorScheme get colorScheme => Theme.of(this).colorScheme;
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list/presentation/core/colors.dart';
-import 'package:todo_list/presentation/widget/loading_error_widget.dart';
+import 'package:todo_list/presentation/core/theme/theme.dart';
+import 'package:todo_list/presentation/core/components/loading_error_widget.dart';
 
 class LoadingErrorScreen extends StatelessWidget {
   final VoidCallback onRefresh;

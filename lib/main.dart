@@ -1,19 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_list/domain/port/di.dart';
-import 'package:todo_list/presentation/init/intialization_page.dart';
+import 'package:todo_list/presentation/core/bloc_observer.dart';
+import 'package:todo_list/presentation/init/view/initialization_page.dart';
 
 void main() {
-  setupServiceLocator();
+  Bloc.observer = LogBlocObserver();
+  sl.setup();
   runApp(
     const InitializationPage(),
   );
-}
-
-class Application extends StatelessWidget {
-  const Application({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
 }

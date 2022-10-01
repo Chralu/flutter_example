@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list/presentation/core/colors.dart';
+import 'package:todo_list/presentation/core/theme/theme.dart';
 import 'package:todo_list/presentation/core/strings.dart';
-import 'package:todo_list/presentation/core/styles.dart';
 
 class LoadingErrorWidget extends StatelessWidget {
   final VoidCallback? onRefresh;
@@ -16,7 +15,9 @@ class LoadingErrorWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = context.colorScheme;
-    final strings = context.strings;
+    final strings = context.localizations;
+    final textTheme = context.textTheme;
+
     return SizedBox(
       width: 300,
       child: Column(
@@ -25,7 +26,7 @@ class LoadingErrorWidget extends StatelessWidget {
           Text(
             strings.networkErrorTitle,
             textAlign: TextAlign.center,
-            style: context.headline1.copyWith(
+            style: textTheme.headline1?.copyWith(
               color: colorScheme.primary,
               fontWeight: FontWeight.w600,
             ),
@@ -34,7 +35,7 @@ class LoadingErrorWidget extends StatelessWidget {
           Text(
             message,
             textAlign: TextAlign.center,
-            style: context.headline2.copyWith(
+            style: textTheme.headline2?.copyWith(
               color: colorScheme.primary,
               fontWeight: FontWeight.normal,
             ),
